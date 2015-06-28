@@ -55,7 +55,7 @@ public class MainScript3 : MonoBehaviour {
 			for (int x = 0; x < gridX; x++) {
 				for (int y = 0; y < gridY; y++) {
 					
-					Vector3 pos = new Vector3(x + Random.Range(-25, 26), y + Random.Range(-25, 26) , 0) * spacing;
+					Vector3 pos = new Vector3 (-100 - (x + Random.Range (-25, 26) ), y + Random.Range (-25, 26), 0) * spacing;
 					
 					// Instantiate the piece game object. Required a explict cast conversion (GameObject)
 					GameObject go = (GameObject) Instantiate(piece, pos, Quaternion.identity);
