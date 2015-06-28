@@ -103,7 +103,7 @@ GameObject:
   - 61: {fileID: 146407138}
   m_Layer: 0
   m_Name: FishI
-  m_TagString: Untagged
+  m_TagString: fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 146407134}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f69e40a4e505c74d8efd5100d30b493, type: 3}
+  m_Script: {fileID: 11500000, guid: 519eb754dd7a0814a9550e8c8dc0c05e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerfish: {fileID: 969623922}
@@ -229,7 +229,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 424515084}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14b651db7eded954584046483334503e, type: 3}
+  m_Script: {fileID: 11500000, guid: 82e29682befa5904a871f615986989f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   piece: {fileID: 1122127273}
@@ -259,11 +259,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 522212712}
   - 33: {fileID: 522212711}
-  - 64: {fileID: 522212710}
   - 23: {fileID: 522212709}
+  - 61: {fileID: 522212710}
+  - 61: {fileID: 522212713}
   m_Layer: 0
   m_Name: Quad
-  m_TagString: Untagged
+  m_TagString: limits
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -278,7 +279,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: d12ad71623906394b96308c966bc70a1, type: 2}
+  - {fileID: 2100000, guid: a54cafce27332cb448596c7de0f45e46, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -292,18 +293,19 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!64 &522212710
-MeshCollider:
+--- !u!61 &522212710
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 522212708}
+  m_Enabled: 0
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Size: {x: .99999994, y: 1}
 --- !u!33 &522212711
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -318,11 +320,24 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 522212708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 202, y: 15, z: 133}
-  m_LocalScale: {x: 331.491486, y: 184.192841, z: 1}
+  m_LocalPosition: {x: 125.300003, y: -4, z: 133}
+  m_LocalScale: {x: 190.445526, y: 108.755783, z: 1.82449102}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!61 &522212713
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 522212708}
+  m_Enabled: 0
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .99999994, y: 1}
 --- !u!1 &739027273
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,7 +429,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 969623922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d6056efc6d4d104ba601b2a431b4884, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e07bf7a83af4a14bb41ce89d818203d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: .0399999991
@@ -466,7 +481,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -485,7 +500,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 969623922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 186.199997, y: -4.69999981, z: 0}
+  m_LocalPosition: {x: 106, y: -30.8999996, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -545,7 +560,7 @@ GameObject:
   - 61: {fileID: 1122127280}
   m_Layer: 0
   m_Name: Fish
-  m_TagString: Untagged
+  m_TagString: fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -558,7 +573,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1122127273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31aa78697acbf904baae391dea628da1, type: 3}
+  m_Script: {fileID: 11500000, guid: 509c643e8d6f34d4e9b94e054f837cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerfish: {fileID: 969623922}
@@ -754,7 +769,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1750863502}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 187, y: 9.89999962, z: -10}
+  m_LocalPosition: {x: 114, y: -28, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -767,13 +782,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1750863502}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab8289ac18601e34d99600b91f0292bf, type: 3}
+  m_Script: {fileID: 11500000, guid: c5bd9069866e61446a01788c718ab524, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interpVelocity: 0
   minDistance: 0
   followDistance: 0
-  target: {fileID: 0}
+  target: {fileID: 969623922}
   offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1965805552
 GameObject:
