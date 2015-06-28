@@ -110,7 +110,6 @@ GameObject:
   m_IsActive: 1
 --- !u!50 &146407135
 Rigidbody2D:
-  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -119,11 +118,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!61 &146407136
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -145,11 +144,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 146407134}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4db9daf911858de47ae8edef6695a1bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f69e40a4e505c74d8efd5100d30b493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerfish: {fileID: 969623922}
-  mindis: 50
+  mindis: 30
 --- !u!61 &146407138
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -230,15 +229,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 424515084}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97ea2978e5130af4da886325da268f17, type: 3}
+  m_Script: {fileID: 11500000, guid: 14b651db7eded954584046483334503e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   piece: {fileID: 1122127273}
   piece2: {fileID: 146407134}
   gridX: 10
   gridY: 6
-  spacing: 3
-  numSelectors: 6
+  spacing: 2
+  numSelectors: 5
 --- !u!4 &424515086
 Transform:
   m_ObjectHideFlags: 0
@@ -279,7 +278,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: ad4f6c31dd739a34ea2479676d4563b6, type: 2}
+  - {fileID: 2100000, guid: d12ad71623906394b96308c966bc70a1, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -415,7 +414,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 969623922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d623d98b849d6094dab127d78a8dc4ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d6056efc6d4d104ba601b2a431b4884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: .0399999991
@@ -459,7 +458,6 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!50 &969623926
 Rigidbody2D:
-  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -468,11 +466,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
+  m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 4
 --- !u!33 &969623927
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -560,14 +558,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1122127273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a0ad0d8ca44ded4c8e2dd38c1e25a15, type: 3}
+  m_Script: {fileID: 11500000, guid: 31aa78697acbf904baae391dea628da1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerfish: {fileID: 969623922}
-  mindis: 50
+  mindis: 30
 --- !u!50 &1122127275
 Rigidbody2D:
-  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -576,11 +573,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!23 &1122127276
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -750,7 +747,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
-  m_StereoMirrorMode: 0
 --- !u!4 &1750863507
 Transform:
   m_ObjectHideFlags: 0
@@ -771,13 +767,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1750863502}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01f871e45fc481c459b3b8a69876df8c, type: 3}
+  m_Script: {fileID: 11500000, guid: ab8289ac18601e34d99600b91f0292bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   interpVelocity: 0
   minDistance: 0
   followDistance: 0
-  target: {fileID: 969623922}
+  target: {fileID: 0}
   offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1965805552
 GameObject:
