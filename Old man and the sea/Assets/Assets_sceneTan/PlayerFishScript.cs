@@ -73,8 +73,15 @@ public class PlayerFishScript : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll) {
 
-		//Debug.Log (coll.collider.gameObject.name);
-		Destroy (coll.collider.gameObject, 0);
+		if (coll.collider.gameObject.tag == "fish") {
+			//Debug.Log (coll.collider.gameObject.name);
+			Destroy (coll.collider.gameObject, 0);
+		}
+
+		if (coll.collider.gameObject.tag == "limits") {
+			Debug.Log (coll.collider.gameObject.name);
+			//Destroy (coll.collider.gameObject, 0);
+		}
 		
 	}
 
