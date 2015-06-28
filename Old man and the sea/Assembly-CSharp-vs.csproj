@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\CameraBounds.cs" />
      <Compile Include="Assets\Scripts\CameraSmoothFollow.cs" />
      <Compile Include="Assets\Scripts\FollowMouse.cs" />
+     <Compile Include="Assets\Scripts\Parallaxing.cs" />
      <Compile Include="Assets\Scripts\PlayerAnimation.cs" />
      <Compile Include="Assets\Scripts\PlayerBounds.cs" />
      <Compile Include="Assets\Scripts\PlayerMobility.cs" />
