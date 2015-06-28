@@ -223,6 +223,7 @@ GameObject:
   - 114: {fileID: 1917467227}
   - 95: {fileID: 1917467231}
   - 114: {fileID: 1917467233}
+  - 114: {fileID: 1917467234}
   m_Layer: 0
   m_Name: Fish
   m_TagString: Untagged
@@ -338,6 +339,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1917467231}
+--- !u!114 &1917467234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1917467226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b8798d4b0fa9343b4530801aab13e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasbounds: 1
+  minPlayerPos: {x: -50, y: -25, z: 0}
+  maxPlayerPos: {x: 50, y: 25, z: 0}
 --- !u!1 &2059402778
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,6 +365,7 @@ GameObject:
   - 92: {fileID: 2059402781}
   - 124: {fileID: 2059402780}
   - 81: {fileID: 2059402779}
+  - 114: {fileID: 2059402785}
   - 114: {fileID: 2059402784}
   m_Layer: 0
   m_Name: Main Camera
@@ -432,14 +448,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 2059402778}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5660916aaa23cb448e70021fa5b1756, type: 3}
+  m_Script: {fileID: 11500000, guid: c47715c416e50f646ba0c7bf2eccc60f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTarget: {fileID: 1917467226}
-  player: {fileID: 1917467226}
-  smoothTime: .800000012
-  cameraFollowX: 1
-  cameraFollowY: 1
-  cameraFollowHeight: 1
-  cameraHeight: 2.5
-  velocity: {x: 0, y: 0}
+  hasbounds: 1
+  minCameraPos: {x: -50, y: -18, z: -10}
+  maxCameraPos: {x: 50, y: 18, z: -10}
+--- !u!114 &2059402785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2059402778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d8238cc53530b64fbb7828c3d3bb591, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1917467229}
+  damping: .699999988
+  lookAheadFactor: 3
+  lookAheadReturnSpeed: .5
+  lookAheadMoveThreshold: .100000001
