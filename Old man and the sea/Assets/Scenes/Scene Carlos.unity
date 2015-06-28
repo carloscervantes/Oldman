@@ -283,7 +283,6 @@ Transform:
   m_RootOrder: 1
 --- !u!50 &1917467230
 Rigidbody2D:
-  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -292,11 +291,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
+  m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!95 &1917467231
 Animator:
   serializedVersion: 3
@@ -428,7 +427,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
-  m_StereoMirrorMode: 0
 --- !u!4 &2059402783
 Transform:
   m_ObjectHideFlags: 0
