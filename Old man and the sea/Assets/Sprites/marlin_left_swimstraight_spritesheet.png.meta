@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: 138b50efc9c85a74a8026765e8378e51
+timeCreated: 1435505484
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: swim_l_1
+    21300002: swim_l_2
+    21300004: swim_l_3
+    21300006: swim_l_4
+    21300008: swim_l_5
+    21300010: swim_l_6
+    21300012: swim_l_7
+    21300014: swim_l_8
+    21300016: swim_l_9
+    21300018: swim_l_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: swim_l_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 881
+        width: 316
+        height: 143
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swim_l_2
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 879
+        width: 313
+        height: 144
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swim_l_3
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 880
+        width: 311
+        height: 144
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swim_l_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 727
+        width: 310
+        height: 146
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swim_l_5
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 726
+        width: 309
+        height: 146
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swim_l_6
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 727
+        width: 312
+        height: 146
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swim_l_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 580
+        width: 315
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swim_l_8
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 582
+        width: 317
+        height: 143
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swim_l_9
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 586
+        width: 319
+        height: 140
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: swim_l_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 435
+        width: 318
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
