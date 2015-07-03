@@ -1,0 +1,244 @@
+fileFormatVersion: 2
+guid: 235e80030728aac4288e95cbdc0e6993
+timeCreated: 1435870219
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: marlinbaby_right_down
+    21300002: marlin_all-versions_right_1
+    21300004: marlinbaby_right_up
+    21300006: marlinbig_right_down
+    21300008: marlinbaby_right_straight
+    21300010: marlinbaby_right_idle
+    21300012: marlin_all-versions_right_6
+    21300014: marlinyoung_right_up
+    21300016: marlinbig_right_up
+    21300018: marlin_all-versions_right_9
+    21300020: marlinyoung_right_straight
+    21300022: marlinbig_right_straight
+    21300024: marlinyoung_right_idle
+    21300026: marlinbig_right_idle
+    21300028: marlin_all-versions_right_14
+    21300030: marlinyoung_right_down
+    21300032: marlin_all-versions_right_16
+    21300034: marlinbabyrd
+    21300036: marlinbabyru
+    21300038: marlinbigrd
+    21300040: marlinbabyr
+    21300042: marlinbabyri
+    21300044: marlinyoungru
+    21300046: marlinbigru
+    21300048: marlinyoungr
+    21300050: marlinbigr
+    21300052: marlinyoungri
+    21300054: marlinbigri
+    21300056: marlinyoungrd
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: marlinbabyrd
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 862
+        width: 102
+        height: 49
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlin_all-versions_right_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 664
+        width: 315
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbabyru
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 787
+        width: 111
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbigrd
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 717
+        width: 269
+        height: 125
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbabyr
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 732
+        width: 117
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbabyri
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 664
+        width: 104
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlin_all-versions_right_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 537
+        width: 309
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinyoungru
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 516
+        width: 205
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbigru
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 553
+        width: 295
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlin_all-versions_right_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 336
+        width: 316
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinyoungr
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 449
+        width: 202
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbigr
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 404
+        width: 317
+        height: 144
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinyoungri
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 341
+        width: 210
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbigri
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 236
+        width: 317
+        height: 156
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlin_all-versions_right_14
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 20
+        width: 349
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinyoungrd
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 221
+        width: 188
+        height: 82
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
