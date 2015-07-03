@@ -13,6 +13,9 @@ public class MainScript3 : MonoBehaviour {
 	private float hook_gridX = 1f;
 	private float hook_gridY = 1f;
 	private float hook_spacing = 0.5f;
+	private int num_to_young = 5;
+	private int num_to_medium = 10;
+	private int num_to_big = 15;
 
 	//private Bounds[] bbounds;
 	private int lifetime = 20; 
@@ -33,13 +36,6 @@ public class MainScript3 : MonoBehaviour {
 		//
 		fishes_consumed = 0;
 		text_numfishes.text = "0";
-		//
-
-		fish_size = "small";
-		anim_fish.SetInteger ("size", 0); //Small
-
-	//	fish_size = "medium";
-	//	anim_fish.SetInteger ("size", 2); //
 
 		//Mandar peces de izquierda 
 		StartCoroutine(sendFishes());
@@ -52,20 +48,32 @@ public class MainScript3 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if (fishes_consumed < num_to_young) {
+			fish_size = "small";
+			//anim_fish.SetInteger ("size", 0); //Small - By default 
+			fish_atun.gameObject.transform.localScale = new Vector3(0.2F, 0.2F, 0);
+			fish_hook.gameObject.transform.localScale = new Vector3(0.2F, 0.2F, 0);
+		}
 
-		if (fishes_consumed >= 10 && fishes_consumed < 20) {
+		if (fishes_consumed >= num_to_young && fishes_consumed < num_to_medium) {
 			fish_size = "young";
 			anim_fish.SetInteger ("size", 1); //Young
+			fish_atun.gameObject.transform.localScale = new Vector3(0.5F, 0.5F, 0);
+			fish_hook.gameObject.transform.localScale = new Vector3(0.5F, 0.5F, 0);
 		}
-		if (fishes_consumed >= 20 && fishes_consumed < 30) {
+		if (fishes_consumed >= num_to_medium && fishes_consumed < num_to_big) {
 			fish_size = "medium";
 			anim_fish.SetInteger ("size", 2); //Medium
+			fish_atun.gameObject.transform.localScale = new Vector3(0.7F, 0.7F, 0);
+			fish_hook.gameObject.transform.localScale = new Vector3(0.7F, 0.7F, 0);
 
 		}
-		if (fishes_consumed >= 30) {
+		if (fishes_consumed >= num_to_big) {
 			fish_size = "big";
 			anim_fish.SetInteger ("size", 3); //Big
-			
+			anim_fish.gameObject.transform.localScale = new Vector3(2F, 2F, 0);
+			fish_atun.gameObject.transform.localScale = new Vector3(1.1F, 1.1F, 0);
+			fish_hook.gameObject.transform.localScale = new Vector3(1.1F, 1.1F, 0);
 		}
 
 
@@ -89,38 +97,6 @@ public class MainScript3 : MonoBehaviour {
 		int i = 0;
 		while (i <= 10) 
 		{
-			/*
-			switch (fish_size)
-			{
-			case "small": 
-				fish_atun.gameObject.transform.localScale = new Vector3(0.2F, 0.2F, 0);
-				break;
-			case "young": 
-				fish_atun.gameObject.transform.localScale = new Vector3(0.5F, 0.5F, 0);
-				break;
-			case "medium": 
-				fish_atun.gameObject.transform.localScale = new Vector3(1F, 1F, 0);
-				break;
-			case "big": 
-				fish_atun.gameObject.transform.localScale = new Vector3(1.5F, 1.5F, 0);
-				break;
-			}
-			switch (fish_size)
-			{
-			case "small": 
-				fish_hook.gameObject.transform.localScale = new Vector3(0.2F, 0.2F, 0);
-				break;
-			case "young": 
-				fish_hook.gameObject.transform.localScale = new Vector3(0.5F, 0.5F, 0);
-				break;
-			case "medium": 
-				fish_hook.gameObject.transform.localScale = new Vector3(1F, 1F, 0);
-				break;
-			case "big": 
-				fish_hook.gameObject.transform.localScale = new Vector3(1.5F, 1.5F, 0);
-				break;
-			}
-			*/
 			generate_fishes_atun(true, -65);
 			generate_fishes_hook(true, -65);
 			//i ++; // never stop to generate fishes
