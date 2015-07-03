@@ -52,8 +52,10 @@
      <Compile Include="Assets\Assets_sceneTan\FishScript22.cs" />
      <Compile Include="Assets\Assets_sceneTan\FishScriptI.cs" />
      <Compile Include="Assets\Assets_sceneTan\FishScriptI22.cs" />
+     <Compile Include="Assets\Assets_sceneTan\FishScript_anim.cs" />
      <Compile Include="Assets\Assets_sceneTan\MainScript3.cs" />
      <Compile Include="Assets\Assets_sceneTan\MainScript322.cs" />
+     <Compile Include="Assets\Assets_sceneTan\PlayerCollidersScript.cs" />
      <Compile Include="Assets\Assets_sceneTan\PlayerFishScript.cs" />
      <Compile Include="Assets\Assets_sceneTan\PlayerFishScript22.cs" />
      <Compile Include="Assets\Scripts\Camera2DFollow.cs" />

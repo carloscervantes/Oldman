@@ -516,9 +516,6 @@ MonoBehaviour:
   fish_atun: {fileID: 816052077}
   fish_hook: {fileID: 1802561993}
   fish_player: {fileID: 1917467226}
-  gridX: 10
-  gridY: 3
-  spacing: 1
   text_numfishes: {fileID: 488332169}
 --- !u!4 &583811476
 Transform:
@@ -749,7 +746,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &906912565
 AudioSource:
   m_ObjectHideFlags: 0
