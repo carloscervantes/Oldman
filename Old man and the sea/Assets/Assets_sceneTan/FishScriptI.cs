@@ -2,34 +2,32 @@
 using System.Collections;
 
 public class FishScriptI : MonoBehaviour {
-
-	private int yy;
-	private int xx;
-	private int id;
+	
+	private bool initialdirection = false;
 	private bool direction = false;
-
+	
 	private float count = 0.0f;
-	private float speed = 7.0f;
+	private float speed = 10.0f;
 	private float timingOffset = 1.0f;
-	private float height = 1.0f;
-
+	private float height = 0.1f;
+	
 	private float lala;
-
+	
 	public GameObject playerfish;
-	public float mindis = 30;
-
+	public float mindis = 4.10f;
+	
 	private float dis;
-
+	
 	
 	// Use this for initialization
 	void Start () {
-		lala = Random.Range(-25, 26);
-		height = Random.Range(1, 2);
+		lala = Random.Range(-0.1f, 0.1f);
+		height = Random.Range(0.1f, 0.5f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		count += Time.deltaTime / Random.Range(10, 20);
+		count += Time.deltaTime / Random.Range(50, 60);
 		var offset = this.transform.position.y + Mathf.Sin( (Time.time + lala) * speed + timingOffset) * height / 2;
 		//transform.position = new Vector3(this.transform.position.x + count, offset, 0);
 		if (direction) {
@@ -37,53 +35,26 @@ public class FishScriptI : MonoBehaviour {
 		} else {
 			transform.position = new Vector3( this.transform.position.x  - count, offset, 0);
 		}
-
-
-
+		
+		
 		dis = Vector3.Distance(this.transform.position, playerfish.gameObject.transform.position);
 		//Debug.Log(dis);
 		if (dis <= mindis)
 		{
-			//Follow
-			//transform.position += transform.forward * AISpeed * Time.deltaTime;
-			//changedirection ();
-			//this.gameObject.GetComponent<Rigidbody2D>().AddForce (new Vector2(forceApplied,0));
-			direction = true;
-			//Debug.Log("allalala");
+			direction = !initialdirection;
 		}
-
-		//Destroy(gameObject, lifetime);
-		//Destroy(gameObject, 20);
-
-	}
-	
-	void OnMouseDown()
-	{
-		GetComponent<Renderer>().material.color = new Color(0,255,0);
-		Debug.Log (xx + " - " + yy);
-		
-		//Destroy (this.gameObject);
 		
 	}
 	
-	public void setyy (int y){
-		yy = y;
+	
+	
+	public void setinitualdirection (bool direc){
+		initialdirection = direc;
 	}
-	public void setxx (int x){
-		xx = x;
-	}
-	public void setid (int id){
-		id = id;
-	}
-	void changedirection (){
-		if (direction == true) {
-			direction = false;
-			//Debug.Log("false");
-		} else {
-			direction = true;
-			//Debug.Log("true");
-		}
-	}
-
-
+	
+	
+	
+	
+	
+	
 }
