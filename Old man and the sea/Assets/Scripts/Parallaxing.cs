@@ -31,7 +31,7 @@ public class Parallaxing : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 	//for each BG
 		for (int i = 0; i < BGelements.Length; i++) {
 			//Parallax is the opposite of the camera movement because the previous frame multiplied by scale.

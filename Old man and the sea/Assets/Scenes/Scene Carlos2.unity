@@ -516,7 +516,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &320834809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2588,6 +2588,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1917467229}
   damping: .300000012
-  lookAheadFactor: 5
+  lookAheadFactor: 2
   lookAheadReturnSpeed: .5
-  lookAheadMoveThreshold: .200000003
+  lookAheadMoveThreshold: .300000012
