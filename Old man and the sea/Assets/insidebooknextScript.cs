@@ -10,6 +10,9 @@ public class insidebooknextScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if( Input.GetKeyUp(KeyCode.Escape)){
+			Application.LoadLevel(4);
+		}
 	
 	}
 

@@ -20,7 +20,9 @@ public class InitAnimBook : MonoBehaviour {
 			play.gameObject.SetActive(false);
 			//Debug.Log("lala");
 		}
-
+		if( Input.GetKeyUp(KeyCode.Escape)){
+			Application.LoadLevel(4);
+		}
 	
 	}
 
