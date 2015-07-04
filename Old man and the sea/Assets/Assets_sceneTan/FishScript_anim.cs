@@ -21,7 +21,7 @@ public class FishScript_anim : MonoBehaviour {
 	private int kind_of_fish;
 
 	private Animator anim;
-	
+
 	
 	// Use this for initialization
 	void Start () {
@@ -35,7 +35,8 @@ public class FishScript_anim : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		count += Time.deltaTime / Random.Range(50, 60);
+
+		count += Time.deltaTime / Random.Range(80, 90);
 		var offset = this.transform.position.y + Mathf.Sin( (Time.time + lala) * speed + timingOffset) * height / 2;
 		//transform.position = new Vector3(this.transform.position.x + count, offset, 0);
 		if (direction) {

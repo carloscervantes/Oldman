@@ -37,6 +37,11 @@ public class MainScript3 : MonoBehaviour {
 		fishes_consumed = 0;
 		text_numfishes.text = "0";
 
+		//Comenzar mandando peces pequenos
+		fish_atun.gameObject.transform.localScale = new Vector3(0.2F, 0.2F, 0);
+		fish_hook.gameObject.transform.localScale = new Vector3(0.2F, 0.2F, 0);
+
+
 		//Mandar peces de izquierda 
 		StartCoroutine(sendFishes());
 		//Mandar peces de derecha
@@ -97,10 +102,10 @@ public class MainScript3 : MonoBehaviour {
 		int i = 0;
 		while (i <= 10) 
 		{
-			generate_fishes_atun(true, -65);
-			generate_fishes_hook(true, -65);
+			generate_fishes_atun(true, -70);
+			generate_fishes_hook(true, -70);
 			//i ++; // never stop to generate fishes
-			yield return new WaitForSeconds(7F); 
+			yield return new WaitForSeconds(5F); 
 		}
 	}
 
@@ -110,8 +115,8 @@ public class MainScript3 : MonoBehaviour {
 	{
 		int i = 0;
 		while (i <= 10) {
-			generate_fishes_atun(false, 60);
-			generate_fishes_hook(false, 60);
+			generate_fishes_atun(false, 70);
+			generate_fishes_hook(false, 70);
 			//i ++; // never stop to generate fishes
 			yield return new WaitForSeconds(5F); 
 		}
