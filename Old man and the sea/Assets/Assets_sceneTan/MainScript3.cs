@@ -16,10 +16,12 @@ public class MainScript3 : MonoBehaviour {
 	private int num_to_young = 5;
 	private int num_to_medium = 10;
 	private int num_to_big = 15;
+	private int num_lives = 1;
 
 	//private Bounds[] bbounds;
 	private int lifetime = 20; 
 	public Text text_numfishes;
+	public Text text_result;
 
 	private int fishes_consumed;
 	private string fish_size;
@@ -161,6 +163,30 @@ public class MainScript3 : MonoBehaviour {
 		text_numfishes.text = fishes_consumed.ToString();
 	}
 
-		
+	public void catched_fish()
+	{
+		num_lives--;
+		Debug.Log (num_lives);
+		if (num_lives == 0) 
+		{
+			//You died
+			//Wait 5 seconds and restart the game
+			StartCoroutine(die_restart_game());
+		}
+	}
+
+
+
+	IEnumerator die_restart_game() 
+	{
+		//before
+		text_result.gameObject.SetActive (true);
+		text_result.text = "You die...";
+		yield return new WaitForSeconds(5F); 
+		//after waiting, It decides who is the winner;
+		Application.LoadLevel (0);
+	}
+
+
 	}
 	

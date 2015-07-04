@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Assets_sceneTan\MainScript3.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Assets_sceneTan\PlayerCollidersScript.cs">
     <Files>
-      <File FileName="Assets\Assets_sceneTan\MainScript3.cs" Line="52" Column="2" />
+      <File FileName="Assets\Assets_sceneTan\MainScript3.cs" Line="187" Column="29" />
+      <File FileName="Assets\Assets_sceneTan\PlayerCollidersScript.cs" Line="19" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
