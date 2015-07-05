@@ -4,4 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/intro1_scene_book.unity
+  - enabled: 1
+    path: Assets/Scenes/intro2_scene_girl.unity
+  - enabled: 1
+    path: Assets/Scenes/intro3_inside_book.unity
+  - enabled: 1
+    path: Assets/Scenes/intro4_scene_girlsleep.unity
+  - enabled: 1
+    path: Assets/Scenes/Scene Carlos2_fishes.unity
