@@ -70,10 +70,11 @@ public class PlayerCollidersScript : MonoBehaviour {
 		} else {
 			Debug.Log("fish hooked");
 			this.gameObject.SetActive(false);
+			MainGame.gameObject.GetComponent<MainScript3>().catched_fish();
 		}
 		bar.gameObject.SetActive(false);
 		//Informt to the main game the result of the fight when hooked
-		MainGame.gameObject.GetComponent<MainScript3>().catched_fish();
+
 	}
 
 
