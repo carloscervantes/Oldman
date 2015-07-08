@@ -26,6 +26,8 @@ public class MainScript3 : MonoBehaviour {
 	private int fishes_consumed;
 	private string fish_size;
 
+	private BoxCollider2D coll;
+
 
 	private Animator anim_fish; 
 
@@ -35,7 +37,9 @@ public class MainScript3 : MonoBehaviour {
 		anim_fish = fish_player.gameObject.GetComponent<Animator> ();
 		//Establecer la talla inicial del pez.
 		anim_fish.SetInteger ("size", 0); //Small
-		//
+		//Collider del pez del jugador
+		coll = fish_player.gameObject.GetComponent<BoxCollider2D>();
+
 		fishes_consumed = 0;
 		text_numfishes.text = "0";
 
@@ -60,6 +64,18 @@ public class MainScript3 : MonoBehaviour {
 			//anim_fish.SetInteger ("size", 0); //Small - By default 
 			fish_atun.gameObject.transform.localScale = new Vector3(0.3F, 0.3F, 0);
 			fish_hook.gameObject.transform.localScale = new Vector3(0.3F, 0.3F, 0);
+
+			if (Input.GetKey(KeyCode.RightArrow))
+			{
+			coll.size = new Vector2(0.5f, 0.5f);
+			coll.offset = new Vector2(0.25f,0f);
+			}
+			if (Input.GetKey(KeyCode.LeftArrow))
+			{
+				coll.size = new Vector2(0.5f, 0.5f);
+				coll.offset = new Vector2(-0.25f,0f);
+			}
+
 		}
 
 		if (fishes_consumed >= num_to_young && fishes_consumed < num_to_medium) {
@@ -67,12 +83,35 @@ public class MainScript3 : MonoBehaviour {
 			anim_fish.SetInteger ("size", 1); //Young
 			fish_atun.gameObject.transform.localScale = new Vector3(0.6F, 0.6F, 0);
 			fish_hook.gameObject.transform.localScale = new Vector3(0.6F, 0.6F, 0);
+
+			if (Input.GetKey(KeyCode.RightArrow))
+			{
+				coll.size = new Vector2(0.7f, 0.7f);
+				coll.offset = new Vector2(0.7f,0f);
+			}
+			if (Input.GetKey(KeyCode.LeftArrow))
+			{
+				coll.size = new Vector2(0.7f, 0.7f);
+				coll.offset = new Vector2(-0.7f,0f);
+			}
 		}
+
 		if (fishes_consumed >= num_to_medium && fishes_consumed < num_to_big) {
 			fish_size = "medium";
 			anim_fish.SetInteger ("size", 2); //Medium
 			fish_atun.gameObject.transform.localScale = new Vector3(0.7F, 0.7F, 0);
 			fish_hook.gameObject.transform.localScale = new Vector3(0.7F, 0.7F, 0);
+
+			if (Input.GetKey(KeyCode.RightArrow))
+			{
+				coll.size = new Vector2(0.7f, 0.7f);
+				coll.offset = new Vector2(1f,0f);
+			}
+			if (Input.GetKey(KeyCode.LeftArrow))
+			{
+				coll.size = new Vector2(0.7f, 0.7f);
+				coll.offset = new Vector2(-1f,0f);
+			}
 
 		}
 		if (fishes_consumed >= num_to_big) {
@@ -81,6 +120,17 @@ public class MainScript3 : MonoBehaviour {
 			anim_fish.gameObject.transform.localScale = new Vector3(2F, 2F, 0);
 			fish_atun.gameObject.transform.localScale = new Vector3(1.1F, 1.1F, 0);
 			fish_hook.gameObject.transform.localScale = new Vector3(1.1F, 1.1F, 0);
+
+			if (Input.GetKey(KeyCode.RightArrow))
+			{
+				coll.size = new Vector2(0.7f, 0.7f);
+				coll.offset = new Vector2(1f,0f);
+			}
+			if (Input.GetKey(KeyCode.LeftArrow))
+			{
+				coll.size = new Vector2(0.7f, 0.7f);
+				coll.offset = new Vector2(-1f,0f);
+			}
 		}
 
 

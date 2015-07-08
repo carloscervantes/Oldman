@@ -2099,9 +2099,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: .600000024, y: 0}
+  m_Offset: {x: .227706075, y: 0}
   serializedVersion: 2
-  m_Size: {x: .349999994, y: .330000013}
+  m_Size: {x: .600000024, y: .330000013}
 --- !u!114 &1917467233
 MonoBehaviour:
   m_ObjectHideFlags: 0
