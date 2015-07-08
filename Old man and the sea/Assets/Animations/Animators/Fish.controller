@@ -1781,7 +1781,7 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_Motion: {fileID: 20633720}
   m_Tag: Swimming small
-  m_SpeedParameter: 
+  m_SpeedParameter: speedX
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
 --- !u!1102 &110212920
@@ -1852,7 +1852,7 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_Motion: {fileID: 20679952}
   m_Tag: Idle small
-  m_SpeedParameter: 
+  m_SpeedParameter: speedX
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
 --- !u!1102 &110218958
