@@ -2393,7 +2393,7 @@ GameObject:
   - 95: {fileID: 1941552490}
   m_Layer: 0
   m_Name: Fish_shark
-  m_TagString: fish
+  m_TagString: shark
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
