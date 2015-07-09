@@ -13,7 +13,7 @@ public class MainScript3 : MonoBehaviour {
 	private float hook_gridX = 5f;
 	private float hook_gridY = 1f;
 	private float hook_spacing = 0.5f;
-	private int num_to_young = 5;
+	private int num_to_young = 9;
 	private int num_to_medium = 10;
 	private int num_to_big = 15;
 	private int num_lives = 1;

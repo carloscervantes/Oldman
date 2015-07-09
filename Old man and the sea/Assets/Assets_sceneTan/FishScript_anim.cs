@@ -14,7 +14,7 @@ public class FishScript_anim : MonoBehaviour {
 	private float lala;
 	
 	public GameObject playerfish;
-	public float mindis = 4.10f;
+	private float mindis = 0.10f;
 	
 	private float dis;
 	

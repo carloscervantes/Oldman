@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 2d6eeffa93db26643b2742af5f55afae
-timeCreated: 1436395909
+guid: eb853bb5108a02a498d528736adfc834
+timeCreated: 1436453053
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: eating_0
-    21300002: eating_1
-    21300004: eating_2
-    21300006: eating_3
-    21300008: eating_4
-    21300010: eating_5
-    21300012: eating_6
-    21300014: eating_7
-    21300016: eating_8
-    21300018: eating_9
-    21300020: eating_10
-    21300022: eating_11
-    21300024: eating_12
+    21300000: eatingright_0
+    21300002: eatingright_1
+    21300004: eatingright_2
+    21300006: eatingright_3
+    21300008: eatingright_4
+    21300010: eatingright_5
+    21300012: eatingright_6
+    21300014: eatingright_7
+    21300016: eatingright_8
+    21300018: eatingright_9
+    21300020: eatingright_10
+    21300022: eatingright_11
+    21300024: eatingright_12
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -62,130 +62,130 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: eating_0
+    - name: eatingright_0
       rect:
         serializedVersion: 2
-        x: 147
-        y: 838
-        width: 529
-        height: 238
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_1
-      rect:
-        serializedVersion: 2
-        x: 874
-        y: 990
-        width: 210
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_2
-      rect:
-        serializedVersion: 2
-        x: 1309
+        x: 143
         y: 821
         width: 596
         height: 195
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_3
+    - name: eatingright_1
       rect:
         serializedVersion: 2
-        x: 885
+        x: 964
+        y: 990
+        width: 210
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eatingright_2
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 838
+        width: 529
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eatingright_3
+      rect:
+        serializedVersion: 2
+        x: 948
         y: 860
         width: 215
         height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_4
+    - name: eatingright_4
       rect:
         serializedVersion: 2
-        x: 121
-        y: 496
-        width: 548
-        height: 249
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_5
-      rect:
-        serializedVersion: 2
-        x: 889
-        y: 734
-        width: 211
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_6
-      rect:
-        serializedVersion: 2
-        x: 1289
+        x: 125
         y: 500
         width: 634
         height: 251
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_7
+    - name: eatingright_5
       rect:
         serializedVersion: 2
-        x: 762
+        x: 948
+        y: 734
+        width: 211
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eatingright_6
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 496
+        width: 548
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eatingright_7
+      rect:
+        serializedVersion: 2
+        x: 884
         y: 560
         width: 402
         height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_8
+    - name: eatingright_8
       rect:
         serializedVersion: 2
-        x: 778
-        y: 337
-        width: 400
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_9
-      rect:
-        serializedVersion: 2
-        x: 1309
+        x: 106
         y: 103
         width: 633
         height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_10
+    - name: eatingright_9
       rect:
         serializedVersion: 2
-        x: 79
-        y: 105
-        width: 590
-        height: 182
+        x: 870
+        y: 337
+        width: 400
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_11
+    - name: eatingright_10
       rect:
         serializedVersion: 2
-        x: 785
+        x: 876
         y: 76
         width: 387
         height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_12
+    - name: eatingright_11
       rect:
         serializedVersion: 2
-        x: 1885
+        x: 1379
+        y: 105
+        width: 590
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: eatingright_12
+      rect:
+        serializedVersion: 2
+        x: 157
         y: 83
         width: 6
         height: 6
