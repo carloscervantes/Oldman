@@ -27,9 +27,9 @@ AnimationClip:
     script: {fileID: 0}
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 86edc6ebeb0d4ec439898511744ee40d, type: 3}
+      value: {fileID: 21300000, guid: 5c32712381bb6bf46ac388227963a53c, type: 3}
     - time: .0166666675
-      value: {fileID: 21300000, guid: 86edc6ebeb0d4ec439898511744ee40d, type: 3}
+      value: {fileID: 21300000, guid: 5c32712381bb6bf46ac388227963a53c, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -56,8 +56,8 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
     - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-    - {fileID: 21300000, guid: 86edc6ebeb0d4ec439898511744ee40d, type: 3}
-    - {fileID: 21300000, guid: 86edc6ebeb0d4ec439898511744ee40d, type: 3}
+    - {fileID: 21300000, guid: 5c32712381bb6bf46ac388227963a53c, type: 3}
+    - {fileID: 21300000, guid: 5c32712381bb6bf46ac388227963a53c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
