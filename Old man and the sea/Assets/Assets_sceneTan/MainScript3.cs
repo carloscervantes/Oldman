@@ -16,9 +16,9 @@ public class MainScript3 : MonoBehaviour {
 	private float hook_spacing = 0.5f;
 	private float shark_gridX = 1f;
 	private float shark_spacing = 1.5f;
-	private int num_to_young = 1;
+	private int num_to_young = 10;
 	private int num_to_medium = 20;
-	private int num_to_big = 25;
+	private int num_to_big = 30;
 	private int num_lives = 1;
 
 	//private Bounds[] bbounds;
@@ -47,8 +47,8 @@ public class MainScript3 : MonoBehaviour {
 		text_numfishes.text = "0";
 
 		//Comenzar mandando peces pequenos
-		fish_atun.gameObject.transform.localScale = new Vector3(0.3F, 0.3F, 0);
-		fish_hook.gameObject.transform.localScale = new Vector3(0.3F, 0.3F, 0);
+		fish_atun.gameObject.transform.localScale = new Vector3(0.4F, 0.4F, 0);
+		fish_hook.gameObject.transform.localScale = new Vector3(0.4F, 0.4F, 0);
 
 
 		//Mandar peces de izquierda 
@@ -67,8 +67,8 @@ public class MainScript3 : MonoBehaviour {
 		if (fishes_consumed < num_to_young) {
 			fish_size = "small";
 			//anim_fish.SetInteger ("size", 0); //Small - By default 
-			fish_atun.gameObject.transform.localScale = new Vector3(0.3F, 0.3F, 0);
-			fish_hook.gameObject.transform.localScale = new Vector3(0.3F, 0.3F, 0);
+			fish_atun.gameObject.transform.localScale = new Vector3(0.4F, 0.4F, 0);
+			fish_hook.gameObject.transform.localScale = new Vector3(0.4F, 0.4F, 0);
 
 			if (Input.GetKey(KeyCode.RightArrow))
 			{
@@ -99,6 +99,9 @@ public class MainScript3 : MonoBehaviour {
 				coll.size = new Vector2(0.7f, 0.7f);
 				coll.offset = new Vector2(-0.7f,0f);
 			}
+
+			//Cabiar la distancia a la que se alejan los peces del pez del jugador
+			FishScript_anim.mindis = 3.0f;
 		}
 
 		if (fishes_consumed >= num_to_medium && fishes_consumed < num_to_big) {
@@ -118,6 +121,9 @@ public class MainScript3 : MonoBehaviour {
 				coll.offset = new Vector2(-1f,0f);
 			}
 
+			//Cabiar la distancia a la que se alejan los peces del pez del jugador
+			FishScript_anim.mindis = 3.2f;
+
 		}
 		if (fishes_consumed >= num_to_big) {
 			fish_size = "big";
@@ -136,6 +142,9 @@ public class MainScript3 : MonoBehaviour {
 				coll.size = new Vector2(0.7f, 0.7f);
 				coll.offset = new Vector2(-1f,0f);
 			}
+
+			//Cabiar la distancia a la que se alejan los peces del pez del jugador
+			FishScript_anim.mindis = 3.5f;
 		}
 
 
@@ -249,6 +258,9 @@ public class MainScript3 : MonoBehaviour {
 		if (num_lives == 0) 
 		{
 			//You died
+			//before
+			text_result.gameObject.SetActive (true);
+			text_result.text = "You die...";
 			//Wait 5 seconds and restart the game
 			StartCoroutine(die_restart_game());
 		}
@@ -258,9 +270,7 @@ public class MainScript3 : MonoBehaviour {
 
 	IEnumerator die_restart_game() 
 	{
-		//before
-		text_result.gameObject.SetActive (true);
-		text_result.text = "You die...";
+
 		yield return new WaitForSeconds(5F); 
 		//after waiting, It decides who is the winner;
 		Application.LoadLevel (0);

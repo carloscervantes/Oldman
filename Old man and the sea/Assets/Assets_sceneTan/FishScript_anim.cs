@@ -14,7 +14,7 @@ public class FishScript_anim : MonoBehaviour {
 	private float lala;
 	
 	public GameObject playerfish;
-	private float mindis = 0.10f;
+	public static float mindis = 2.10f;
 	
 	private float dis;
 	
@@ -36,6 +36,8 @@ public class FishScript_anim : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		dis = Vector3.Distance(this.transform.position, playerfish.gameObject.transform.position);
+
 		//si es un pez atun o un anzuelo
 		if (kind_of_fish == 0 || kind_of_fish == 1) {
 			count += Time.deltaTime / Random.Range (90, 100);
@@ -46,6 +48,15 @@ public class FishScript_anim : MonoBehaviour {
 			} else {
 				transform.position = new Vector3 (this.transform.position.x - count, offset, 0);
 			}
+
+			//Cambio de direccion segun la distancia
+			//Debug.Log(dis);
+			if (dis <= mindis)
+			{
+				direction = !initialdirection;
+				change_animation();
+			}
+
 		}
 		// si es un tiburon
 		if (kind_of_fish == 2 ) {
@@ -57,16 +68,13 @@ public class FishScript_anim : MonoBehaviour {
 			} else {
 				transform.position = new Vector3 (this.transform.position.x - count, offset, 0);
 			}
+
+
 		}
 
 		
-		dis = Vector3.Distance(this.transform.position, playerfish.gameObject.transform.position);
-		//Debug.Log(dis);
-		if (dis <= mindis)
-		{
-			direction = !initialdirection;
-			change_animation();
-		}
+
+
 		
 	}
 	
@@ -80,6 +88,7 @@ public class FishScript_anim : MonoBehaviour {
 	public void setkind_of_fish (int kind){
 		kind_of_fish = kind;
 	}
+
 	
 	public void change_animation()
 	{
