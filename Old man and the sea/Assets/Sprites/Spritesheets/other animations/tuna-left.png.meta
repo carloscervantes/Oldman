@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: b07da071cb359f943a9147494a874044
+timeCreated: 1436482957
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: tuna-left_0
+    21300002: tuna-left_1
+    21300004: tuna-left_2
+    21300006: tuna-left_3
+    21300008: tuna-left_4
+    21300010: tuna-left_5
+    21300012: tuna-left_6
+    21300014: tuna-left_7
+    21300016: tuna-left_8
+    21300018: tuna-left_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: tuna-left_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 451
+        width: 130
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tuna-left_1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 451
+        width: 133
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tuna-left_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 451
+        width: 135
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tuna-left_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 381
+        width: 136
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tuna-left_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 381
+        width: 134
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tuna-left_5
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 381
+        width: 132
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tuna-left_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 307
+        width: 133
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tuna-left_7
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 302
+        width: 134
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tuna-left_8
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 304
+        width: 134
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tuna-left_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 237
+        width: 133
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

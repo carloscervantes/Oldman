@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: ff3ef137a7b78114bac55886e91127b0
+timeCreated: 1436467647
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: marlinbig_left_idle_0
+    21300002: marlinbig_left_idle_1
+    21300004: marlinbig_left_idle_2
+    21300006: marlinbig_left_idle_3
+    21300008: marlinbig_left_idle_4
+    21300010: marlinbig_left_idle_5
+    21300012: marlinbig_left_idle_6
+    21300014: marlinbig_left_idle_7
+    21300016: marlinbig_left_idle_8
+    21300018: marlinbig_left_idle_9
+    21300020: marlinbig_left_idle_10
+    21300022: marlinbig_left_idle_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: marlinbig_left_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 868
+        width: 317
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbig_left_idle_1
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 868
+        width: 317
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbig_left_idle_2
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 868
+        width: 317
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbig_left_idle_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 708
+        width: 317
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbig_left_idle_4
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 708
+        width: 317
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbig_left_idle_5
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 708
+        width: 317
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbig_left_idle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 550
+        width: 317
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbig_left_idle_7
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 552
+        width: 317
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbig_left_idle_8
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 552
+        width: 317
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbig_left_idle_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 395
+        width: 317
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbig_left_idle_10
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 395
+        width: 317
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinbig_left_idle_11
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 395
+        width: 317
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

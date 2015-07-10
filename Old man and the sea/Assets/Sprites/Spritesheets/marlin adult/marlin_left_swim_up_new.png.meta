@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: b60866d20793b684eaa0e7da08d0f44d
+timeCreated: 1436467332
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: marlin_left_swim_up_new_0
+    21300002: marlin_left_swim_up_new_1
+    21300004: marlin_left_swim_up_new_2
+    21300006: marlin_left_swim_up_new_3
+    21300008: marlin_left_swim_up_new_4
+    21300010: marlin_left_swim_up_new_5
+    21300012: marlin_left_swim_up_new_6
+    21300014: marlin_left_swim_up_new_7
+    21300016: marlin_left_swim_up_new_8
+    21300018: marlin_left_swim_up_new_9
+    21300020: marlin_left_swim_up_new_10
+    21300022: marlin_left_swim_up_new_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: marlin_left_swim_up_new_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 416
+        width: 309
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlin_left_swim_up_new_1
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 416
+        width: 308
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlin_left_swim_up_new_2
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 418
+        width: 306
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlin_left_swim_up_new_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 312
+        width: 304
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlin_left_swim_up_new_4
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 311
+        width: 305
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlin_left_swim_up_new_5
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 307
+        width: 306
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlin_left_swim_up_new_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 197
+        width: 311
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlin_left_swim_up_new_7
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 195
+        width: 313
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlin_left_swim_up_new_8
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 194
+        width: 315
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlin_left_swim_up_new_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 89
+        width: 315
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlin_left_swim_up_new_10
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 91
+        width: 315
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlin_left_swim_up_new_11
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 94
+        width: 312
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

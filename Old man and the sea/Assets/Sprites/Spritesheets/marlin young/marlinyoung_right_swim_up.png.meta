@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: 250fcedc83e9cae488acd9bb781b88ee
+timeCreated: 1436467760
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: marlinyoung_right_swim_up_0
+    21300002: marlinyoung_right_swim_up_1
+    21300004: marlinyoung_right_swim_up_2
+    21300006: marlinyoung_right_swim_up_3
+    21300008: marlinyoung_right_swim_up_4
+    21300010: marlinyoung_right_swim_up_5
+    21300012: marlinyoung_right_swim_up_6
+    21300014: marlinyoung_right_swim_up_7
+    21300016: marlinyoung_right_swim_up_8
+    21300018: marlinyoung_right_swim_up_9
+    21300020: marlinyoung_right_swim_up_10
+    21300022: marlinyoung_right_swim_up_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: marlinyoung_right_swim_up_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 468
+        width: 205
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinyoung_right_swim_up_1
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 470
+        width: 205
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinyoung_right_swim_up_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 408
+        width: 205
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinyoung_right_swim_up_3
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 410
+        width: 206
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinyoung_right_swim_up_4
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 347
+        width: 207
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinyoung_right_swim_up_5
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 350
+        width: 206
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinyoung_right_swim_up_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 289
+        width: 208
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinyoung_right_swim_up_7
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 288
+        width: 207
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinyoung_right_swim_up_8
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 236
+        width: 208
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinyoung_right_swim_up_9
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 235
+        width: 208
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinyoung_right_swim_up_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 185
+        width: 207
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: marlinyoung_right_swim_up_11
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 183
+        width: 208
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
