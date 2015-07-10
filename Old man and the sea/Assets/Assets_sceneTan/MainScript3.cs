@@ -58,6 +58,14 @@ public class MainScript3 : MonoBehaviour {
 		//Mandar los tiburones
 		StartCoroutine (sendSharks ());
 
+
+		//Poblar con peces cercanos mientras llegan los peces generados por la subrutina
+		generate_fishes_atun(true, -10);
+		generate_fishes_hook(true, -10);
+		generate_fishes_atun(false, 10);
+		generate_fishes_hook(false, 10);
+
+
 	}
 	
 	
