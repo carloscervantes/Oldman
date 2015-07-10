@@ -9,8 +9,11 @@ public class PlayerCollidersScript : MonoBehaviour {
 
 	private bool fight_started;
 
+	private Animator anim;
+
 	// Use this for initialization
 	void Start () {
+		anim = this.gameObject.GetComponent<Animator> ();
 
 	}
 	
@@ -54,7 +57,17 @@ public class PlayerCollidersScript : MonoBehaviour {
 			fight_started = false;
 			StartCoroutine (time_figthing ());
 		}
-		
+
+		if (coll.collider.gameObject.tag == "fish" || coll.collider.gameObject.tag == "hook") 
+		{
+			anim.SetTrigger("biting");
+		}
+
+		if (coll.collider.gameObject.tag == "shark") {;
+			this.gameObject.SetActive(false);
+			Destroy (coll.collider.gameObject, 0);
+			MainGame.gameObject.GetComponent<MainScript3>().catched_fish();
+		}
 		
 	}
 

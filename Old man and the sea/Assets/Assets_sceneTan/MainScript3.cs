@@ -6,16 +6,19 @@ public class MainScript3 : MonoBehaviour {
 	
 	public GameObject fish_atun;
 	public GameObject fish_hook;
+	public GameObject fish_shark;
 	public GameObject fish_player;
 	private float atun_gridX = 10f;
 	private float atun_gridY = 2f;
 	private float atun_spacing = 0.5f;
-	private float hook_gridX = 5f;
+	private float hook_gridX = 1f;
 	private float hook_gridY = 1f;
 	private float hook_spacing = 0.5f;
-	private int num_to_young = 5;
-	private int num_to_medium = 10;
-	private int num_to_big = 15;
+	private float shark_gridX = 1f;
+	private float shark_spacing = 1.5f;
+	private int num_to_young = 1;
+	private int num_to_medium = 20;
+	private int num_to_big = 25;
 	private int num_lives = 1;
 
 	//private Bounds[] bbounds;
@@ -26,6 +29,8 @@ public class MainScript3 : MonoBehaviour {
 	private int fishes_consumed;
 	private string fish_size;
 
+	private BoxCollider2D coll;
+
 
 	private Animator anim_fish; 
 
@@ -35,7 +40,9 @@ public class MainScript3 : MonoBehaviour {
 		anim_fish = fish_player.gameObject.GetComponent<Animator> ();
 		//Establecer la talla inicial del pez.
 		anim_fish.SetInteger ("size", 0); //Small
-		//
+		//Collider del pez del jugador
+		coll = fish_player.gameObject.GetComponent<BoxCollider2D>();
+
 		fishes_consumed = 0;
 		text_numfishes.text = "0";
 
@@ -48,6 +55,8 @@ public class MainScript3 : MonoBehaviour {
 		StartCoroutine(sendFishes());
 		//Mandar peces de derecha
 		StartCoroutine(sendFishes2());
+		//Mandar los tiburones
+		StartCoroutine (sendSharks ());
 
 	}
 	
@@ -60,6 +69,18 @@ public class MainScript3 : MonoBehaviour {
 			//anim_fish.SetInteger ("size", 0); //Small - By default 
 			fish_atun.gameObject.transform.localScale = new Vector3(0.3F, 0.3F, 0);
 			fish_hook.gameObject.transform.localScale = new Vector3(0.3F, 0.3F, 0);
+
+			if (Input.GetKey(KeyCode.RightArrow))
+			{
+			coll.size = new Vector2(0.5f, 0.5f);
+			coll.offset = new Vector2(0.25f,0f);
+			}
+			if (Input.GetKey(KeyCode.LeftArrow))
+			{
+				coll.size = new Vector2(0.5f, 0.5f);
+				coll.offset = new Vector2(-0.25f,0f);
+			}
+
 		}
 
 		if (fishes_consumed >= num_to_young && fishes_consumed < num_to_medium) {
@@ -67,20 +88,54 @@ public class MainScript3 : MonoBehaviour {
 			anim_fish.SetInteger ("size", 1); //Young
 			fish_atun.gameObject.transform.localScale = new Vector3(0.6F, 0.6F, 0);
 			fish_hook.gameObject.transform.localScale = new Vector3(0.6F, 0.6F, 0);
+
+			if (Input.GetKey(KeyCode.RightArrow))
+			{
+				coll.size = new Vector2(0.7f, 0.7f);
+				coll.offset = new Vector2(0.7f,0f);
+			}
+			if (Input.GetKey(KeyCode.LeftArrow))
+			{
+				coll.size = new Vector2(0.7f, 0.7f);
+				coll.offset = new Vector2(-0.7f,0f);
+			}
 		}
+
 		if (fishes_consumed >= num_to_medium && fishes_consumed < num_to_big) {
 			fish_size = "medium";
 			anim_fish.SetInteger ("size", 2); //Medium
-			fish_atun.gameObject.transform.localScale = new Vector3(0.7F, 0.7F, 0);
-			fish_hook.gameObject.transform.localScale = new Vector3(0.7F, 0.7F, 0);
+			//fish_atun.gameObject.transform.localScale = new Vector3(0.7F, 0.7F, 0);
+			//fish_hook.gameObject.transform.localScale = new Vector3(0.7F, 0.7F, 0);
+
+			if (Input.GetKey(KeyCode.RightArrow))
+			{
+				coll.size = new Vector2(0.7f, 0.7f);
+				coll.offset = new Vector2(1f,0f);
+			}
+			if (Input.GetKey(KeyCode.LeftArrow))
+			{
+				coll.size = new Vector2(0.7f, 0.7f);
+				coll.offset = new Vector2(-1f,0f);
+			}
 
 		}
 		if (fishes_consumed >= num_to_big) {
 			fish_size = "big";
 			anim_fish.SetInteger ("size", 3); //Big
 			anim_fish.gameObject.transform.localScale = new Vector3(2F, 2F, 0);
-			fish_atun.gameObject.transform.localScale = new Vector3(1.1F, 1.1F, 0);
-			fish_hook.gameObject.transform.localScale = new Vector3(1.1F, 1.1F, 0);
+			//fish_atun.gameObject.transform.localScale = new Vector3(1.1F, 1.1F, 0);
+			//fish_hook.gameObject.transform.localScale = new Vector3(1.1F, 1.1F, 0);
+
+			if (Input.GetKey(KeyCode.RightArrow))
+			{
+				coll.size = new Vector2(0.7f, 0.7f);
+				coll.offset = new Vector2(1f,0f);
+			}
+			if (Input.GetKey(KeyCode.LeftArrow))
+			{
+				coll.size = new Vector2(0.7f, 0.7f);
+				coll.offset = new Vector2(-1f,0f);
+			}
 		}
 
 
@@ -125,6 +180,17 @@ public class MainScript3 : MonoBehaviour {
 	}
 		
 
+	IEnumerator sendSharks() 
+	{
+		int i = 0;
+		while (i <= 10) {
+			generate_fishes_shark(false, 30);
+			generate_fishes_shark(true, -30);
+			//i ++; // never stop to generate fishes
+			yield return new WaitForSeconds(10F); 
+		}
+	}
+
 
 	void generate_fishes_atun(bool direction, float initial_x_pont){
 		for (int x = 0; x < atun_gridX; x++) {
@@ -154,6 +220,19 @@ public class MainScript3 : MonoBehaviour {
 					go1.GetComponent<FishScript_anim>().setkind_of_fish(1);
 					Destroy(go1, lifetime);
 			}
+		}
+	}
+
+
+	void generate_fishes_shark(bool direction, float initial_x_pont){
+		for (int x = 0; x < shark_gridX; x++) {
+				Vector3 pos = new Vector3 (initial_x_pont - (x + Random.Range (-5, 6) ), 0 + Random.Range (-2, 2), 0) * shark_spacing;
+				
+				// Instantiate the  game object. Hook
+				GameObject go1 = (GameObject) Instantiate(fish_shark, pos, Quaternion.identity);
+				go1.GetComponent<FishScript_anim>().setinitualdirection(direction);
+				go1.GetComponent<FishScript_anim>().setkind_of_fish(2);
+				Destroy(go1, lifetime);
 		}
 	}
 
