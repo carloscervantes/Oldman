@@ -22,6 +22,8 @@ public class FishScript_anim : MonoBehaviour {
 
 	private Animator anim;
 
+	private BoxCollider2D collshark;
+
 	
 	// Use this for initialization
 	void Start () {
@@ -31,6 +33,8 @@ public class FishScript_anim : MonoBehaviour {
 		
 		direction = initialdirection;
 		change_animation();
+
+		collshark = this.gameObject.GetComponent<BoxCollider2D>();
 	}
 	
 	// Update is called once per frame
@@ -65,8 +69,12 @@ public class FishScript_anim : MonoBehaviour {
 			//transform.position = new Vector3(this.transform.position.x + count, offset, 0);
 			if (direction) {
 				transform.position = new Vector3 (this.transform.position.x + count, offset, 0);
+				collshark.size = new Vector2(1.0f, 1.5f);
+				collshark.offset = new Vector2(2.0f,-0.1f);
 			} else {
 				transform.position = new Vector3 (this.transform.position.x - count, offset, 0);
+				collshark.size = new Vector2(1.0f, 1.5f);
+				collshark.offset = new Vector2(-2.0f,-0.1f);
 			}
 
 

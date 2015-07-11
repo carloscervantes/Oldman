@@ -23,6 +23,8 @@ public class MainScript3 : MonoBehaviour {
 
 	//private Bounds[] bbounds;
 	private int lifetime = 20; 
+	private int lifetime_sharks = 25; 
+
 	public Text text_numfishes;
 	public Text text_result;
 
@@ -249,7 +251,7 @@ public class MainScript3 : MonoBehaviour {
 				GameObject go1 = (GameObject) Instantiate(fish_shark, pos, Quaternion.identity);
 				go1.GetComponent<FishScript_anim>().setinitualdirection(direction);
 				go1.GetComponent<FishScript_anim>().setkind_of_fish(2);
-				Destroy(go1, lifetime);
+				Destroy(go1, lifetime_sharks);
 		}
 	}
 
