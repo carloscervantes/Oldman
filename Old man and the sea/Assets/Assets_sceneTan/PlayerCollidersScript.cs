@@ -45,7 +45,8 @@ public class PlayerCollidersScript : MonoBehaviour {
 		
 		if (coll.collider.gameObject.tag == "fish") {
 			//Debug.Log (coll.collider.gameObject.name);
-			Destroy (coll.collider.gameObject, 0);
+	Destroy (coll.collider.gameObject, 0);
+			coll.collider.gameObject.GetComponent<FishScript_anim>().eated();
 			MainGame.gameObject.GetComponent<MainScript3>().increment_fishes_consumed();
 		}
 		if (coll.collider.gameObject.tag == "hook") {
@@ -65,6 +66,7 @@ public class PlayerCollidersScript : MonoBehaviour {
 
 		if (coll.collider.gameObject.tag == "shark") {;
 			this.gameObject.SetActive(false);
+			coll.collider.gameObject.GetComponent<FishScript_anim>().sharkbite();
 			//Destroy (coll.collider.gameObject, 0);
 			MainGame.gameObject.GetComponent<MainScript3>().catched_fish();
 		}

@@ -10,7 +10,7 @@ public class MainScript3 : MonoBehaviour {
 	public GameObject fish_player;
 	private float atun_gridX = 10f;
 	private float atun_gridY = 2f;
-	private float atun_spacing = 0.5f;
+	private float atun_spacing = 1.0f;
 	private float hook_gridX = 1f;
 	private float hook_gridY = 1f;
 	private float hook_spacing = 0.5f;
@@ -111,7 +111,7 @@ public class MainScript3 : MonoBehaviour {
 			}
 
 			//Cabiar la distancia a la que se alejan los peces del pez del jugador
-			FishScript_anim.mindis = 3.0f;
+			FishScript_anim.mindis = 2.5f;
 		}
 
 		if (fishes_consumed >= num_to_medium && fishes_consumed < num_to_big) {
@@ -132,7 +132,7 @@ public class MainScript3 : MonoBehaviour {
 			}
 
 			//Cabiar la distancia a la que se alejan los peces del pez del jugador
-			FishScript_anim.mindis = 3.2f;
+			FishScript_anim.mindis = 2.8f;
 
 		}
 		if (fishes_consumed >= num_to_big) {
@@ -154,7 +154,7 @@ public class MainScript3 : MonoBehaviour {
 			}
 
 			//Cabiar la distancia a la que se alejan los peces del pez del jugador
-			FishScript_anim.mindis = 3.5f;
+			FishScript_anim.mindis = 3.0f;
 		}
 
 

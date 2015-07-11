@@ -9,7 +9,7 @@ public class FishScript_anim : MonoBehaviour {
 	private float count = 0.0f;
 	private float speed = 10.0f;
 	private float timingOffset = 1.0f;
-	private float height = 0.1f;
+	private float height = 0.05f;
 	
 	private float lala;
 	
@@ -29,7 +29,7 @@ public class FishScript_anim : MonoBehaviour {
 	void Start () {
 		anim = this.gameObject.GetComponent<Animator> ();
 		lala = Random.Range(-0.1f, 0.1f);
-		height = Random.Range(0.1f, 0.5f);
+		height = Random.Range(0.1f, 0.2f);
 		
 		direction = initialdirection;
 		change_animation();
@@ -41,10 +41,11 @@ public class FishScript_anim : MonoBehaviour {
 	void Update () {
 
 		dis = Vector3.Distance(this.transform.position, playerfish.gameObject.transform.position);
+		AnimatorStateInfo animstate = anim.GetCurrentAnimatorStateInfo(0);
 
 		//si es un pez atun o un anzuelo
 		if (kind_of_fish == 0 || kind_of_fish == 1) {
-			count += Time.deltaTime / Random.Range (90, 100);
+			count += Time.deltaTime / Random.Range (90, 150);
 			var offset = this.transform.position.y + Mathf.Sin ((Time.time + lala) * speed + timingOffset) * height / 2;
 			//transform.position = new Vector3(this.transform.position.x + count, offset, 0);
 			if (direction) {
@@ -80,6 +81,16 @@ public class FishScript_anim : MonoBehaviour {
 
 		}
 
+		if (animstate.IsName("fishAnimationEated")) {
+			//this.gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+			//this.gameObject.GetComponent<Rigidbody2D>().angularVelocity = 0f;
+
+		}
+
+
+		if (animstate.IsName("DeleteObject")) {
+			Destroy (this.gameObject, 0);
+		}
 		
 
 
@@ -110,8 +121,15 @@ public class FishScript_anim : MonoBehaviour {
 		
 	}
 	
-	
-	
+	public void eated()
+	{
+		anim.SetBool ("alive", false);
+	}
+
+	public void sharkbite()
+	{
+		anim.SetTrigger("biting");
+	}
 	
 }
 
