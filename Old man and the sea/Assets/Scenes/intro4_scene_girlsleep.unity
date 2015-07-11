@@ -1139,6 +1139,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &536256434
 Transform:
   m_ObjectHideFlags: 0
@@ -2290,8 +2291,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1078362512}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.600000024, y: -3.00999999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -.639999986, y: -2.97000003, z: 0}
+  m_LocalScale: {x: .933752418, y: 1.00700665, z: 1}
   m_Children: []
   m_Father: {fileID: 1965064172}
   m_RootOrder: 1
@@ -4499,7 +4500,7 @@ SpriteRenderer:
   m_SortingLayerID: 314829047
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: a4e8fac50bfe11a42948fa8213e8c6b5, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: .79411763, g: .192690298, b: .192690298, a: 1}
 --- !u!1 &2134145820
 GameObject:
   m_ObjectHideFlags: 0
@@ -4546,6 +4547,7 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
+  m_RepeatDelay: .5
   m_AllowActivationOnMobileDevice: 0
 --- !u!114 &2134145823
 MonoBehaviour:
