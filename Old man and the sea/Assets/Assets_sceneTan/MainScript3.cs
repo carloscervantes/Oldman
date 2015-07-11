@@ -264,7 +264,7 @@ public class MainScript3 : MonoBehaviour {
 	public void catched_fish()
 	{
 		num_lives--;
-		Debug.Log (num_lives);
+		//Debug.Log (num_lives);
 		if (num_lives == 0) 
 		{
 			//You died
