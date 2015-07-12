@@ -289,7 +289,7 @@ public class MainScript3 : MonoBehaviour {
 
 		if (barfishes.value >= 1) 
 		{
-			Application.LoadLevel (7);
+			Application.LoadLevel (6);
 		}
 
 	}
@@ -311,6 +311,29 @@ public class MainScript3 : MonoBehaviour {
 
 		}
 	}
+
+
+	public void eatedbyshark_fish()
+	{
+		num_lives--;
+		//Debug.Log (num_lives);
+		if (num_lives == 0) 
+		{
+			//You died
+			//before
+			//text_result.gameObject.SetActive (true);
+			//text_result.text = "You die...";
+			//Wait 5 seconds and restart the game
+			//StartCoroutine(die_restart_game());
+
+			camera2.gameObject.SetActive (true);
+			camera1.gameObject.SetActive (false);
+			anim_vids.SetTrigger ("sharkwins");
+			//Application.LoadLevel (6);
+			
+		}
+	}
+
 
 	public void saved_fish()
 	{

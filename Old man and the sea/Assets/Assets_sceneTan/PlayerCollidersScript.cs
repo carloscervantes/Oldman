@@ -67,9 +67,9 @@ public class PlayerCollidersScript : MonoBehaviour {
 
 		if (coll.collider.gameObject.tag == "shark") {;
 			this.gameObject.SetActive(false);
-			coll.collider.gameObject.GetComponent<FishScript_anim>().sharkbite();
+			//coll.collider.gameObject.GetComponent<FishScript_anim>().sharkbite();
 			//Destroy (coll.collider.gameObject, 0);
-			MainGame.gameObject.GetComponent<MainScript3>().catched_fish();
+			MainGame.gameObject.GetComponent<MainScript3>().eatedbyshark_fish();
 		}
 		
 	}
