@@ -79,6 +79,8 @@ public class PlayerCollidersScript : MonoBehaviour {
 	IEnumerator time_figthing() 
 	{
 		//before
+		this.GetComponent<BoxCollider2D> ().enabled = false;
+		this.GetComponent<Animator> ().enabled = false;
 		yield return new WaitForSeconds(10F); 
 		//after waiting, It decides who is the winner.
 		if (bar.value <= 0.5) {
@@ -91,9 +93,18 @@ public class PlayerCollidersScript : MonoBehaviour {
 		}
 		bar.gameObject.SetActive(false);
 		//Informt to the main game the result of the fight when hooked
-
+		this.gameObject.transform.position = new Vector3 (0, -1f, 0);
+		this.GetComponent<Animator> ().enabled = true;
+		StartCoroutine (grace_time ());
 	}
 
-
+	//seconds of extra immuniny time
+	IEnumerator grace_time() 
+	{
+		//before
+		yield return new WaitForSeconds (2F); 
+		//after
+		this.GetComponent<BoxCollider2D> ().enabled = true;
+	}
 
 }
