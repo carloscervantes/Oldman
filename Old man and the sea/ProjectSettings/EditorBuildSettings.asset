@@ -15,3 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/intro4_scene_girlsleep.unity
   - enabled: 1
     path: Assets/Scenes/Scene Carlos2_fishes.unity
+  - enabled: 1
+    path: Assets/Scenes/retry_scene.unity
+  - enabled: 1
+    path: Assets/Scenes/intro4_scene_wakeup1.unity

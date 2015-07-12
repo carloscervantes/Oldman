@@ -170,9 +170,9 @@ public class MainScript3 : MonoBehaviour {
 
 		if (vidsstate.IsName ("EndGameCatched")) 
 		{
-			camera1.gameObject.SetActive (true);
-			camera2.gameObject.SetActive (false);
-
+			//camera1.gameObject.SetActive (true);
+			//camera2.gameObject.SetActive (false);
+			Application.LoadLevel(5);
 
 		}
 		if (vidsstate.IsName ("EndGameFree")) 

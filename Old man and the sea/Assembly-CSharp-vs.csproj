@@ -67,6 +67,7 @@
      <Compile Include="Assets\Scripts\PlayerAnimation.cs" />
      <Compile Include="Assets\Scripts\PlayerBounds.cs" />
      <Compile Include="Assets\Scripts\PlayerMobility.cs" />
+     <Compile Include="Assets\Scripts\RetryScript.cs" />
      <Compile Include="Assets\SleepnextScript.cs" />
      <Compile Include="Assets\assets_intro_Tan\InitAnimBook.cs" />
      <Compile Include="Assets\assets_intro_Tan\StoryAnim.cs" />

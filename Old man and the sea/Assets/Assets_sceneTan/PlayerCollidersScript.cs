@@ -86,6 +86,12 @@ public class PlayerCollidersScript : MonoBehaviour {
 		if (bar.value <= 0.5) {
 			Debug.Log("fish saved");
 			MainGame.gameObject.GetComponent<MainScript3>().saved_fish();
+
+			//Al Volver al juego poner en una poscicion segura
+			this.gameObject.transform.position = new Vector3 (0, -1f, 0);
+			this.GetComponent<Animator> ().enabled = true;
+			StartCoroutine (grace_time ());
+
 		} else {
 			Debug.Log("fish hooked");
 			this.gameObject.SetActive(false);
@@ -93,9 +99,7 @@ public class PlayerCollidersScript : MonoBehaviour {
 		}
 		bar.gameObject.SetActive(false);
 		//Informt to the main game the result of the fight when hooked
-		this.gameObject.transform.position = new Vector3 (0, -1f, 0);
-		this.GetComponent<Animator> ().enabled = true;
-		StartCoroutine (grace_time ());
+
 	}
 
 	//seconds of extra immuniny time
