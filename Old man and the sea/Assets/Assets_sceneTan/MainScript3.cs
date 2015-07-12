@@ -11,6 +11,7 @@ public class MainScript3 : MonoBehaviour {
 	public GameObject camera1;
 	public GameObject camera2;
 	public GameObject VidSequence;
+	public Scrollbar barfishes;
 	private float atun_gridX = 10f;
 	private float atun_gridY = 2f;
 	private float atun_spacing = 1.0f;
@@ -51,6 +52,7 @@ public class MainScript3 : MonoBehaviour {
 		//Collider del pez del jugador
 		coll = fish_player.gameObject.GetComponent<BoxCollider2D>();
 
+		barfishes.value = 0;
 		fishes_consumed = 0;
 		text_numfishes.text = "0";
 
@@ -282,7 +284,14 @@ public class MainScript3 : MonoBehaviour {
 	public void increment_fishes_consumed()
 	{
 		fishes_consumed ++;
+		barfishes.value = barfishes.value + 0.03f;
 		text_numfishes.text = fishes_consumed.ToString();
+
+		if (barfishes.value >= 1) 
+		{
+			Application.LoadLevel (7);
+		}
+
 	}
 
 	public void catched_fish()
