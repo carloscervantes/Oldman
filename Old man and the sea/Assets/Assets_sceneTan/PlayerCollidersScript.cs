@@ -56,6 +56,7 @@ public class PlayerCollidersScript : MonoBehaviour {
 			bar.gameObject.SetActive(true);
 			bar.value = 0.0f;
 			fight_started = false;
+			MainGame.gameObject.GetComponent<MainScript3>().fight();
 			StartCoroutine (time_figthing ());
 		}
 
@@ -82,6 +83,7 @@ public class PlayerCollidersScript : MonoBehaviour {
 		//after waiting, It decides who is the winner.
 		if (bar.value <= 0.5) {
 			Debug.Log("fish saved");
+			MainGame.gameObject.GetComponent<MainScript3>().saved_fish();
 		} else {
 			Debug.Log("fish hooked");
 			this.gameObject.SetActive(false);

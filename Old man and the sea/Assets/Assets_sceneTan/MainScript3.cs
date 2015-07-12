@@ -8,6 +8,9 @@ public class MainScript3 : MonoBehaviour {
 	public GameObject fish_hook;
 	public GameObject fish_shark;
 	public GameObject fish_player;
+	public GameObject camera1;
+	public GameObject camera2;
+	public GameObject VidSequence;
 	private float atun_gridX = 10f;
 	private float atun_gridY = 2f;
 	private float atun_spacing = 1.0f;
@@ -35,13 +38,16 @@ public class MainScript3 : MonoBehaviour {
 
 
 	private Animator anim_fish; 
+	private Animator anim_vids;
 
 	// Use this for initialization
 	void Start () {
 		//Conseguir el animator del pez del jugador
 		anim_fish = fish_player.gameObject.GetComponent<Animator> ();
+		anim_vids = VidSequence.gameObject.GetComponent<Animator> ();
 		//Establecer la talla inicial del pez.
 		anim_fish.SetInteger ("size", 0); //Small
+		anim_vids.SetInteger ("size", 0); //Small
 		//Collider del pez del jugador
 		coll = fish_player.gameObject.GetComponent<BoxCollider2D>();
 
@@ -73,6 +79,7 @@ public class MainScript3 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		AnimatorStateInfo vidsstate = anim_vids.GetCurrentAnimatorStateInfo (0);
 
 		if (fishes_consumed < num_to_young) {
 			fish_size = "small";
@@ -96,6 +103,7 @@ public class MainScript3 : MonoBehaviour {
 		if (fishes_consumed >= num_to_young && fishes_consumed < num_to_medium) {
 			fish_size = "young";
 			anim_fish.SetInteger ("size", 1); //Young
+			anim_vids.SetInteger ("size", 1); //Young
 			fish_atun.gameObject.transform.localScale = new Vector3(0.6F, 0.6F, 0);
 			fish_hook.gameObject.transform.localScale = new Vector3(0.6F, 0.6F, 0);
 
@@ -117,6 +125,7 @@ public class MainScript3 : MonoBehaviour {
 		if (fishes_consumed >= num_to_medium && fishes_consumed < num_to_big) {
 			fish_size = "medium";
 			anim_fish.SetInteger ("size", 2); //Medium
+			anim_vids.SetInteger ("size", 2); //Medium-Adult
 			//fish_atun.gameObject.transform.localScale = new Vector3(0.7F, 0.7F, 0);
 			//fish_hook.gameObject.transform.localScale = new Vector3(0.7F, 0.7F, 0);
 
@@ -138,6 +147,7 @@ public class MainScript3 : MonoBehaviour {
 		if (fishes_consumed >= num_to_big) {
 			fish_size = "big";
 			anim_fish.SetInteger ("size", 3); //Big
+			anim_vids.SetInteger ("size", 3); //Big
 			anim_fish.gameObject.transform.localScale = new Vector3(2F, 2F, 0);
 			//fish_atun.gameObject.transform.localScale = new Vector3(1.1F, 1.1F, 0);
 			//fish_hook.gameObject.transform.localScale = new Vector3(1.1F, 1.1F, 0);
@@ -157,6 +167,20 @@ public class MainScript3 : MonoBehaviour {
 			FishScript_anim.mindis = 3.0f;
 		}
 
+
+		if (vidsstate.IsName ("EndGameCatched")) 
+		{
+			camera1.gameObject.SetActive (true);
+			camera2.gameObject.SetActive (false);
+
+
+		}
+		if (vidsstate.IsName ("EndGameFree")) 
+		{
+			camera1.gameObject.SetActive (true);
+			camera2.gameObject.SetActive (false);
+
+		}
 
 	}
 	
@@ -269,14 +293,20 @@ public class MainScript3 : MonoBehaviour {
 		{
 			//You died
 			//before
-			text_result.gameObject.SetActive (true);
-			text_result.text = "You die...";
+			//text_result.gameObject.SetActive (true);
+			//text_result.text = "You die...";
 			//Wait 5 seconds and restart the game
-			StartCoroutine(die_restart_game());
+			//StartCoroutine(die_restart_game());
+
+			anim_vids.SetTrigger ("result_catched");
+
 		}
 	}
 
-
+	public void saved_fish()
+	{
+		anim_vids.SetTrigger ("result_free");
+	}
 
 	IEnumerator die_restart_game() 
 	{
@@ -286,6 +316,15 @@ public class MainScript3 : MonoBehaviour {
 		Application.LoadLevel (0);
 	}
 
+
+	public void fight()
+	{
+		anim_vids.SetTrigger ("startfight");
+		camera2.gameObject.SetActive (true);
+		camera1.gameObject.SetActive (false);
+
+
+	}
 
 	}
 	
