@@ -17,6 +17,8 @@ public class FishScript_anim : MonoBehaviour {
 	public static float mindis = 2.10f;
 	
 	private float dis;
+	private float disx;
+	private float disy;
 	
 	private int kind_of_fish;
 
@@ -35,6 +37,18 @@ public class FishScript_anim : MonoBehaviour {
 		change_animation();
 
 		collshark = this.gameObject.GetComponent<CircleCollider2D>();
+
+		//Coliders del tiburon
+		if (kind_of_fish == 2 ) {
+			if (direction) {
+				collshark.radius = 0.6f;
+				collshark.offset = new Vector2(2.6f,-0.2f);
+			} else {
+				collshark.radius = 0.6f;
+				collshark.offset = new Vector2(-2.6f,-0.2f);
+			}
+		}
+
 	}
 	
 	// Update is called once per frame
@@ -71,11 +85,25 @@ public class FishScript_anim : MonoBehaviour {
 			if (direction) {
 				transform.position = new Vector3 (this.transform.position.x + count, offset, 0);
 				collshark.radius = 0.6f;
-				collshark.offset = new Vector2(2.1f,-0.2f);
+				collshark.offset = new Vector2(2.6f,-0.2f);
 			} else {
 				transform.position = new Vector3 (this.transform.position.x - count, offset, 0);
 				collshark.radius = 0.6f;
-				collshark.offset = new Vector2(-2.1f,-0.2f);
+				collshark.offset = new Vector2(-2.6f,-0.2f);
+			}
+
+			disx = (this.transform.position.x - playerfish.gameObject.transform.position.x);
+			if (disx < 0) {
+				disx = -disx;
+			}
+			disy = (this.transform.position.y - playerfish.gameObject.transform.position.y);
+			if (disy < 0) {
+				disy = -disy;
+			}
+
+			if (disx <= 4.0f && disy <= 1.0f )
+			{
+				anim.SetTrigger("biting");
 			}
 
 
@@ -128,7 +156,7 @@ public class FishScript_anim : MonoBehaviour {
 
 	public void sharkbite()
 	{
-		anim.SetTrigger("biting");
+		//anim.SetTrigger("biting");
 	}
 	
 }
