@@ -22,7 +22,7 @@ public class PlayerCollidersScript : MonoBehaviour {
 
 		if (fight_started == false) {
 			//push up slow
-			bar.value = bar.value + 0.001f;
+			bar.value = bar.value + 0.002f;
 
 		} else {
 			//push randomly hard

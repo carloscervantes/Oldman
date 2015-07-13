@@ -68,10 +68,11 @@
      <Compile Include="Assets\Scripts\PlayerBounds.cs" />
      <Compile Include="Assets\Scripts\PlayerMobility.cs" />
      <Compile Include="Assets\Scripts\RetryScript.cs" />
-     <Compile Include="Assets\SleepnextScript.cs" />
      <Compile Include="Assets\assets_intro_Tan\InitAnimBook.cs" />
+     <Compile Include="Assets\assets_intro_Tan\SleepnextScript.cs" />
      <Compile Include="Assets\assets_intro_Tan\StoryAnim.cs" />
-     <Compile Include="Assets\insidebooknextScript.cs" />
+     <Compile Include="Assets\assets_intro_Tan\SurviveNextScript.cs" />
+     <Compile Include="Assets\assets_intro_Tan\insidebooknextScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

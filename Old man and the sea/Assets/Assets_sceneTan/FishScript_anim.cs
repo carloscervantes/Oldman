@@ -104,6 +104,7 @@ public class FishScript_anim : MonoBehaviour {
 			if (disx <= 4.0f && disy <= 1.0f )
 			{
 				anim.SetTrigger("biting");
+				//Debug.Log("allalala");
 			}
 
 
@@ -151,7 +152,7 @@ public class FishScript_anim : MonoBehaviour {
 	
 	public void eated()
 	{
-		anim.SetBool ("alive", false);
+		//anim.SetBool ("alive", false);
 	}
 
 	public void sharkbite()
