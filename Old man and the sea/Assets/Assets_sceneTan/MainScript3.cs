@@ -143,7 +143,7 @@ public class MainScript3 : MonoBehaviour {
 			}
 
 			//Cabiar la distancia a la que se alejan los peces del pez del jugador
-			FishScript_anim.mindis = 2.8f;
+			FishScript_anim.mindis = 2.6f;
 
 		}
 		if (fishes_consumed >= num_to_big) {
@@ -166,7 +166,7 @@ public class MainScript3 : MonoBehaviour {
 			}
 
 			//Cabiar la distancia a la que se alejan los peces del pez del jugador
-			FishScript_anim.mindis = 3.0f;
+			FishScript_anim.mindis = 2.6f;
 		}
 
 
