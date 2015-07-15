@@ -1,21 +1,21 @@
 fileFormatVersion: 2
 guid: 2d6eeffa93db26643b2742af5f55afae
-timeCreated: 1436628214
+timeCreated: 1436974831
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: eating_0
-    21300002: eating_1
-    21300004: eating_2
-    21300006: eating_3
-    21300008: eating_4
-    21300010: eating_5
-    21300012: eating_6
-    21300014: eating_7
-    21300016: eating_8
-    21300018: eating_9
-    21300020: eating_10
-    21300022: eating_11
+    21300000: 3Down
+    21300002: 1Down
+    21300004: 3Up
+    21300006: 1Up
+    21300008: 4Down
+    21300010: 1side
+    21300012: 4Side
+    21300014: 2Up
+    21300016: 2Side
+    21300018: 3Side
+    21300020: 4Up
+    21300022: 2Down
     21300024: eating_12
   serializedVersion: 2
   mipmaps:
@@ -56,13 +56,13 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: eating_0
+    - name: 3Down
       rect:
         serializedVersion: 2
         x: 147
@@ -70,9 +70,9 @@ TextureImporter:
         width: 529
         height: 238
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_1
+    - name: 1Down
       rect:
         serializedVersion: 2
         x: 874
@@ -80,9 +80,9 @@ TextureImporter:
         width: 210
         height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_2
+    - name: 3Up
       rect:
         serializedVersion: 2
         x: 1309
@@ -90,9 +90,9 @@ TextureImporter:
         width: 596
         height: 195
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_3
+    - name: 1Up
       rect:
         serializedVersion: 2
         x: 885
@@ -100,9 +100,9 @@ TextureImporter:
         width: 215
         height: 55
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_4
+    - name: 4Down
       rect:
         serializedVersion: 2
         x: 121
@@ -110,9 +110,9 @@ TextureImporter:
         width: 548
         height: 249
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_5
+    - name: 1side
       rect:
         serializedVersion: 2
         x: 889
@@ -120,9 +120,9 @@ TextureImporter:
         width: 211
         height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_6
+    - name: 4Side
       rect:
         serializedVersion: 2
         x: 1289
@@ -130,9 +130,9 @@ TextureImporter:
         width: 634
         height: 251
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_7
+    - name: 2Up
       rect:
         serializedVersion: 2
         x: 762
@@ -140,9 +140,9 @@ TextureImporter:
         width: 402
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_8
+    - name: 2Side
       rect:
         serializedVersion: 2
         x: 778
@@ -150,9 +150,9 @@ TextureImporter:
         width: 400
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_9
+    - name: 3Side
       rect:
         serializedVersion: 2
         x: 1309
@@ -160,9 +160,9 @@ TextureImporter:
         width: 633
         height: 254
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_10
+    - name: 4Up
       rect:
         serializedVersion: 2
         x: 79
@@ -170,9 +170,9 @@ TextureImporter:
         width: 590
         height: 182
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: eating_11
+    - name: 2Down
       rect:
         serializedVersion: 2
         x: 785
@@ -180,7 +180,7 @@ TextureImporter:
         width: 387
         height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: eating_12
       rect:
@@ -190,7 +190,7 @@ TextureImporter:
         width: 6
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

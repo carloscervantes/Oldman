@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: MarlinYoungBiteLeft
+  m_Name: fishAnimation1_sharkBite
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -18,12 +18,14 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300016, guid: 2d6eeffa93db26643b2742af5f55afae, type: 3}
+      value: {fileID: 21300000, guid: fe5a3f46760e8374bbed6141fc39afb8, type: 3}
+    - time: .100000001
+      value: {fileID: 21300000, guid: b6bbd1e884c28f2408941aa25a109f3b, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 24
+  m_SampleRate: 10
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -37,11 +39,12 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300016, guid: 2d6eeffa93db26643b2742af5f55afae, type: 3}
+    - {fileID: 21300000, guid: fe5a3f46760e8374bbed6141fc39afb8, type: 3}
+    - {fileID: 21300000, guid: b6bbd1e884c28f2408941aa25a109f3b, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: .0416666679
+    m_StopTime: .200000003
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

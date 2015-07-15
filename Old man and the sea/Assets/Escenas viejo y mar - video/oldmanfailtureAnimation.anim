@@ -21,7 +21,7 @@ AnimationClip:
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
-      - time: 3
+      - time: 12
         value: {x: 0, y: 0, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -38,6 +38,11 @@ AnimationClip:
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
+      - time: 12
+        value: {x: 2, y: 2, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: 
@@ -46,23 +51,23 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300000, guid: 5d6e9f644137ca048960309f6621f283, type: 3}
-    - time: .5
-      value: {fileID: 21300000, guid: d4fc9e0090a1ffe4cb56dd5a30dc307a, type: 3}
-    - time: 1
-      value: {fileID: 21300000, guid: 499a84ab0d169e84b94e792f6ca0e813, type: 3}
-    - time: 1.5
-      value: {fileID: 21300000, guid: 771c07a6a957bc0448cd9c1625f2fdb2, type: 3}
     - time: 2
+      value: {fileID: 21300000, guid: d4fc9e0090a1ffe4cb56dd5a30dc307a, type: 3}
+    - time: 4
+      value: {fileID: 21300000, guid: 499a84ab0d169e84b94e792f6ca0e813, type: 3}
+    - time: 6
+      value: {fileID: 21300000, guid: 771c07a6a957bc0448cd9c1625f2fdb2, type: 3}
+    - time: 8
       value: {fileID: 21300000, guid: deca6eca1c55c8e44a93c8c52d92eaa7, type: 3}
-    - time: 2.5
+    - time: 10
       value: {fileID: 21300000, guid: d5c60fc7822403a428b564763333c0ed, type: 3}
-    - time: 3
+    - time: 12
       value: {fileID: 21300000, guid: 8771a21900df6cb4dab7ba59e7e1c07b, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 2
+  m_SampleRate: 1
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -98,7 +103,7 @@ AnimationClip:
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: 5
+    m_StopTime: 13
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -121,7 +126,7 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 3
+      - time: 12
         value: 0
         inSlope: 0
         outSlope: 0
@@ -140,7 +145,7 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 3
+      - time: 12
         value: 0
         inSlope: 0
         outSlope: 0
@@ -159,7 +164,7 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
-      - time: 3
+      - time: 12
         value: 0
         inSlope: 0
         outSlope: 0
@@ -178,6 +183,11 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
+      - time: 12
+        value: 2
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalScale.x
@@ -188,6 +198,11 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
+        value: 2
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 12
         value: 2
         inSlope: 0
         outSlope: 0
@@ -206,6 +221,11 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 10
+      - time: 12
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
     attribute: m_LocalScale.z
@@ -217,14 +237,14 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
   m_Events:
-  - time: 5
+  - time: 10
     functionName: 
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 5
+  - time: 10
     functionName: next_scene
     data: 
     objectReferenceParameter: {fileID: 0}

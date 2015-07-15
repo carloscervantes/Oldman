@@ -26,7 +26,7 @@ public class MainScript3 : MonoBehaviour {
 	private int num_lives = 1;
 
 	//private Bounds[] bbounds;
-	private int lifetime = 20; 
+	private int lifetime = 30; 
 	private int lifetime_sharks = 25; 
 
 	public Text text_numfishes;
